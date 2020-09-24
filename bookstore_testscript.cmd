@@ -1,5 +1,5 @@
 # Set LTC Report Home
-#var report-root = C:\CONTINUOUS_LOAD_TEST
+var report-root = C:\CONTINUOUS_LOAD_TEST
 
 
 # Set Project Info
@@ -12,8 +12,8 @@ var scenario = "Steady Load"
 #var base = C:/Parasoft/loadtest/git/
 var category = BackComp.SOAtest.Consistency
 var minutes = 5
-#var localsetting = C:/Parasoft/loadtest/lt.properties
+#var localsettings = lt.properties
 
 # Run Test
 open ${test-name}.lt
-loadtest -minutes ${minutes} -allReports ./${project}/%d/${category}/${test-name} ${scenario}
+loadtest -minutes ${minutes} -localsettings ${localsettings} -allReports ${report-root}/${project}/%d/${category}/${test-name} ${scenario}
