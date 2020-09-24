@@ -16,4 +16,4 @@ var minutes = 5
 
 # Run Test
 open ${test-name}.lt
-loadtest -minutes ${minutes} -allReports ${report-root}/${project}/%d/${category}/${test-name} ${scenario}
+loadtest -minutes ${minutes} -allReports ./${project}/%d/${category}/${test-name} ${scenario}
