@@ -12,7 +12,7 @@ var scenario = "Steady Load"
 #var base = C:/Parasoft/loadtest/git/
 var category = BackComp.SOAtest.Consistency
 var minutes = 5
-#var localsettings = lt.properties
+var localsettings = lt.properties
 
 # Run Test
 open ${test-name}.lt
